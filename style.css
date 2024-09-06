@@ -1,31 +1,80 @@
+/* Base body styles with background image */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url('background-image.jpg'); /* Replace with the actual image file name */
+    background-size: cover;
+    background-position: center;
+    color: #3B5ACE; /* Brightest color for the main text */
     margin: 0;
     padding: 20px;
     text-align: center;
 }
 
+/* Header styles */
+header {
+    border-bottom: 3px solid #1E2665; /* Medium color for borders */
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #3B5ACE; /* Bright text in header */
+}
+
 h1 {
-    color: #2c3e50;
     font-size: 3em;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.5;
+/* Section styling */
+section {
+    margin-bottom: 20px;
+    border: 2px solid #1E2665; /* Medium color for section borders */
+    padding: 10px;
+    background-color: rgba(14, 17, 34, 0.8); /* Darkest color with transparency */
 }
 
+/* Button styling */
 button {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #1E2665; /* Medium color for buttons */
     color: white;
-    border: none;
+    border: 2px solid #3B5ACE; /* Brightest color for button borders */
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #0E1122; /* Darkest color for button hover */
+}
+
+/* Pop-up styles (for Terms and Conditions, Privacy Policy) */
+.popup {
+    background-color: #0E1122; /* Darkest color for pop-up background */
+    color: white; /* White text for readability */
+    padding: 20px;
+    border: 2px solid #3B5ACE; /* Bright border for pop-up */
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    z-index: 9999;
+}
+
+/* Link styling */
+a {
+    color: #3B5ACE; /* Brightest color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(30, 38, 101, 0.8); /* Medium color with transparency */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
