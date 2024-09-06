@@ -1,3 +1,5 @@
 document.getElementById('clickMe').addEventListener('click', function() {
-    document.getElementById('message').textContent = 'You clicked the button!';
+    const messages = ['You clicked the button!', 'Great job!', 'Keep clicking!', 'You got this!'];
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById('message').textContent = randomMessage;
 });
