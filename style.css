@@ -1,13 +1,7 @@
-/* Video background styling */
-#bgVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    filter: brightness(0.6); /* Adjust brightness if needed */
+body {
+    background-image: url('https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112835.jpg?t=st=1725633687~exp=1725637287~hmac=350b8481c9f545dc4d99136e5b3431d586e29e859bbed0279eac4b4354bf8c30&w=1380');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Base body styles */
