@@ -1,10 +1,19 @@
-/* Base body styles with background image */
+/* Video background styling */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.6); /* Adjust brightness if needed */
+}
+
+/* Base body styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('background-image.jpg'); /* Replace with the actual image file name */
-    background-size: cover;
-    background-position: center;
-    color: #3B5ACE; /* Brightest color for the main text */
+    color: #3B5ACE;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -12,66 +21,36 @@ body {
 
 /* Header styles */
 header {
-    border-bottom: 3px solid #1E2665; /* Medium color for borders */
+    border-bottom: 3px solid #1E2665;
     padding: 20px;
-    margin-bottom: 20px;
-    color: #3B5ACE; /* Bright text in header */
-}
-
-h1 {
-    font-size: 3em;
+    color: #3B5ACE;
 }
 
 /* Section styling */
 section {
     margin-bottom: 20px;
-    border: 2px solid #1E2665; /* Medium color for section borders */
+    border: 2px solid #1E2665;
     padding: 10px;
-    background-color: rgba(14, 17, 34, 0.8); /* Darkest color with transparency */
+    background-color: rgba(14, 17, 34, 0.8); /* Dark background */
 }
 
 /* Button styling */
 button {
     padding: 10px 20px;
-    background-color: #1E2665; /* Medium color for buttons */
+    background-color: #1E2665;
     color: white;
-    border: 2px solid #3B5ACE; /* Brightest color for button borders */
+    border: 2px solid #3B5ACE;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0E1122; /* Darkest color for button hover */
-}
-
-/* Pop-up styles (for Terms and Conditions, Privacy Policy) */
-.popup {
-    background-color: #0E1122; /* Darkest color for pop-up background */
-    color: white; /* White text for readability */
-    padding: 20px;
-    border: 2px solid #3B5ACE; /* Bright border for pop-up */
-    border-radius: 10px;
-    width: 80%;
-    margin: 0 auto;
-    position: fixed;
-    top: 20%;
-    left: 10%;
-    z-index: 9999;
-}
-
-/* Link styling */
-a {
-    color: #3B5ACE; /* Brightest color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    background-color: #0E1122;
 }
 
 /* Footer styling */
 footer {
-    background-color: rgba(30, 38, 101, 0.8); /* Medium color with transparency */
+    background-color: rgba(30, 38, 101, 0.8);
     color: white;
     padding: 10px 0;
     position: fixed;
